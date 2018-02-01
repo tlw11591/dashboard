@@ -1,0 +1,16 @@
+package dao.loan.mapper;
+
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class LoanRowMapper implements RowMapper {
+
+    public Object mapRow(ResultSet rs, int line) throws SQLException {
+        LoanResultSetExtractor extractor = new LoanResultSetExtractor();
+        return extractor.extractData(rs);
+    }
+
+}
