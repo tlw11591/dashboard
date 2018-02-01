@@ -53,7 +53,6 @@ public class Main {
 //
 //    }
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static String api_key = "15d681b87699188d3c134a8e5a3468f4";
 
     public static void main(String[] args) {
         try {
